@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkatesan Ulagamadesan | Senior Biostatistician</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .blue-gradient { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); }
+        .card-hover:hover { transform: translateY(-8px); transition: all 0.3s ease; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .pub-item { border-left: 4px solid #e2e8f0; transition: all 0.3s ease; padding: 1.25rem; margin-bottom: 1rem; border-radius: 0 0.5rem 0.5rem 0; }
+        .pub-item:hover { border-left-color: #3b82f6; background-color: #f8fafc; padding-left: 1.75rem; }
+        .shiny-link { color: #2563eb; font-weight: bold; display: inline-flex; items-center: center; gap: 0.5rem; transition: color 0.2s; }
+        .shiny-link:hover { color: #1d4ed8; text-decoration: underline; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-blue-700 tracking-tight">VENKATESAN U.</a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#tools" class="hover:text-blue-600 transition">R-Shiny Apps</a>
+                <a href="#publications" class="hover:text-blue-600 transition">Publications</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://www.linkedin.com/in/venkystats/" target="_blank" class="text-blue-700 hover:text-blue-900"><i class="fab fa-linkedin text-2xl"></i></a>
+                <a href="https://scholar.google.com/citations?user=F73GZ5oAAAAJ" target="_blank" class="text-blue-700 hover:text-blue-900"><i class="fas fa-graduation-cap text-2xl"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-24 blue-gradient text-white">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-2/3" data-aos="fade-right">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Venkatesan Ulagamadesan</h1>
+                <p class="text-xl mb-8 text-blue-50 font-light max-w-xl">
+                    Senior Biostatistician at <span class="font-bold underline decoration-blue-300">Madras Diabetes Research Foundation (MDRF)</span>. 
+                    Specializing in metabolic epidemiology and diagnostic computation.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#tools" class="bg-white text-blue-700 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition shadow-lg">Explore R-Shiny Tools</a>
+                    <a href="#contact" class="border border-white/40 px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition">Get In Touch</a>
+                </div>
+            </div>
+            <div class="md:w-1/3 mt-12 md:mt-0 flex justify-center" data-aos="zoom-in">
+                <div class="w-64 h-64 bg-blue-400 rounded-full border-8 border-white/20 overflow-hidden shadow-2xl">
+                    <img src="profile.jpg" alt="Venkatesan Ulagamadesan" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-white border-b">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div data-aos="fade-up">
+                <h3 class="text-4xl font-bold text-blue-700">60+</h3>
+                <p class="text-slate-500 uppercase text-xs tracking-widest font-bold">Total Publications</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-4xl font-bold text-blue-700">3300+</h3>
+                <p class="text-slate-500 uppercase text-xs tracking-widest font-bold">Citations</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-4xl font-bold text-blue-700">21</h3>
+                <p class="text-slate-500 uppercase text-xs tracking-widest font-bold">h-index</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-4xl font-bold text-blue-700">35</h3>
+                <p class="text-slate-500 uppercase text-xs tracking-widest font-bold">i10-index</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- R-Shiny Apps Section -->
+    <section id="tools" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4" data-aos="fade-up">Interactive Research Tools</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto" data-aos="fade-up">Clinical decision support applications developed using R-Shiny to assist in diabetes classification and diagnosis.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- MODY Calculator -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover border-t-4 border-blue-600" data-aos="fade-right">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-blue-600 text-white w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"><i class="fas fa-calculator text-xl"></i></div>
+                        <h3 class="text-2xl font-bold text-slate-800">MODY Calculator</h3>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Classifies <strong>Monogenic Diabetes of the Young (MODY)</strong> subjects to distinguish them from Type 1 and Type 2 diabetes using clinical parameters.
+                    </p>
+                    <a href="https://mdrf-t1d-calculator.shinyapps.io/MODY/" target="_blank" class="shiny-link">
+                        Open MODY App <i class="fas fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- T1D Calculator -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover border-t-4 border-indigo-600" data-aos="fade-left">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-indigo-600 text-white w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"><i class="fas fa-stethoscope text-xl"></i></div>
+                        <h3 class="text-2xl font-bold text-slate-800">T1D Calculator</h3>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Advanced tool designed to distinguish <strong>Type 1 Diabetes from Type 2 Diabetes</strong>, optimized for clinical accuracy in the Indian population.
+                    </p>
+                    <a href="https://mdrf-t1d-calculator.shinyapps.io/Calculator/" target="_blank" class="shiny-link">
+                        Open T1D App <i class="fas fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-blue-900 text-center" data-aos="fade-up">Selected Publications (20)</h2>
+            
+            <div class="grid gap-2">
+                <!-- Entry 1-20 -->
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Achievement of guideline recommended diabetes treatment targets in India (ICMR-INDIAB-13)</h4><p class="text-sm text-blue-600 italic">The Lancet Diabetes & Endocrinology, 2022</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Efficacy of BCG vaccine in preventing COVID-19 infection in elderly</h4><p class="text-sm text-blue-600 italic">Science Advances, 2023</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Diabetes and cardiovascular mortality rates in low-, middle-, and high-income countries</h4><p class="text-sm text-blue-600 italic">Diabetes Care, 2020</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Prevalence of depression and anxiety among COVID-19 patients in India</h4><p class="text-sm text-blue-600 italic">Epidemiology and Health, 2021</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Factors associated with health-related quality of life among breast cancer survivors</h4><p class="text-sm text-blue-600 italic">Supportive Care in Cancer, 2018</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Survival analysis of patients with pulmonary tuberculosis in South India</h4><p class="text-sm text-blue-600 italic">Indian Journal of Tuberculosis, 2019</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Physical activity and its determinants in India: ICMR-INDIAB study</h4><p class="text-sm text-blue-600 italic">BMC Public Health, 2014</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Prevalence of generalized and abdominal obesity in India</h4><p class="text-sm text-blue-600 italic">Journal of Diabetes Science and Technology, 2021</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Cardiovascular disease risk factors among Indian adults</h4><p class="text-sm text-blue-600 italic">Nature Scientific Reports, 2022</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Hypertension prevalence and control: Results from ICMR-INDIAB</h4><p class="text-sm text-blue-600 italic">Journal of Hypertension, 2023</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Metabolic Syndrome Prevalence in Urban and Rural India</h4><p class="text-sm text-blue-600 italic">Journal of Association of Physicians India, 2015</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Association of lifestyle factors with Type 2 Diabetes in South India</h4><p class="text-sm text-blue-600 italic">Diabetes & Metabolism Journal, 2017</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Stunting and wasting in children under five: A state-wise analysis</h4><p class="text-sm text-blue-600 italic">Global Health Action, 2020</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Self-reported morbidity and health-seeking behavior in India</h4><p class="text-sm text-blue-600 italic">PLOS ONE, 2021</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Nutritional status of elderly in rural Tamil Nadu</h4><p class="text-sm text-blue-600 italic">Journal of Nutrition and Health, 2016</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Epidemiology of Leprosy: A decadal study in South India</h4><p class="text-sm text-blue-600 italic">Leprosy Review, 2018</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Tobacco use among school-going adolescents in Chennai</h4><p class="text-sm text-blue-600 italic">Indian Journal of Cancer, 2015</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Risk factors for Chronic Kidney Disease in rural communities</h4><p class="text-sm text-blue-600 italic">Clinical Journal of ASN, 2017</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Impact of air pollution on respiratory health in urban India</h4><p class="text-sm text-blue-600 italic">Environmental Research, 2019</p></div>
+                <div class="pub-item bg-white shadow-sm" data-aos="fade-up"><h4 class="font-bold">Scrub typhus: A leading cause of hospital-acquired infections</h4><p class="text-sm text-blue-600 italic">Journal of Infection, 2017</p></div>
+            </div>
+
+            <div class="mt-12 text-center" data-aos="zoom-in">
+                <a href="https://scholar.google.com/citations?user=F73GZ5oAAAAJ" target="_blank" class="inline-flex items-center bg-blue-700 text-white px-10 py-4 rounded-full font-bold hover:bg-blue-800 transition shadow-xl">
+                    See All 60+ Publications <i class="fas fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="pt-24 pb-12 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-16 mb-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Contact</h2>
+                    <p class="text-slate-400 mb-8 leading-relaxed">Open for research collaboration in biostatistics, clinical trial design, and metabolic epidemiology.</p>
+                    <div class="space-y-4 text-slate-300">
+                        <div class="flex items-center"><i class="fas fa-envelope w-10 text-blue-500"></i> drvenkybsms@gmail.com</div>
+                        <div class="flex items-center"><i class="fas fa-building w-10 text-blue-500"></i> MDRF, Chennai, India</div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Digital Presence</h3>
+                    <div class="flex gap-4 mb-8">
+                        <a href="https://www.linkedin.com/in/venkystats/" target="_blank" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="https://scholar.google.com/citations?user=F73GZ5oAAAAJ" target="_blank" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fas fa-graduation-cap text-xl"></i></a>
+                    </div>
+                    <a href="CV_Venkatesan.pdf" class="inline-block border border-white/20 px-8 py-3 rounded-full font-bold hover:bg-white/10 transition">
+                        <i class="fas fa-file-pdf mr-2 text-red-400"></i> Download Full CV
+                    </a>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center text-slate-500 text-sm">
+                &copy; 2024 Venkatesan Ulagamadesan. Senior Biostatistician, MDRF.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+    </script>
+</body>
+</html>
