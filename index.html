@@ -14,7 +14,7 @@
         .card-hover:hover { transform: translateY(-8px); transition: all 0.3s ease; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
         .pub-item { border-left: 4px solid #e2e8f0; transition: all 0.3s ease; padding: 1.25rem; margin-bottom: 1rem; border-radius: 0 0.5rem 0.5rem 0; }
         .pub-item:hover { border-left-color: #3b82f6; background-color: #f8fafc; padding-left: 1.75rem; }
-        .shiny-link { color: #2563eb; font-weight: bold; display: inline-flex; items-center: center; gap: 0.5rem; transition: color 0.2s; font-size: 0.875rem; }
+        .shiny-link { color: #2563eb; font-weight: bold; display: inline-flex; items-center: center; gap: 0.5rem; transition: color 0.2s; }
         .shiny-link:hover { color: #1d4ed8; text-decoration: underline; }
         .journal-tag { background: #f1f5f9; color: #475569; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.875rem; border: 1px solid #e2e8f0; display: inline-block; margin: 0.25rem; }
     </style>
@@ -26,14 +26,16 @@
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-blue-700 tracking-tight">VENKATESAN U.</a>
             
+            <!-- Main Menu - Visible on Tablets/Laptops and up -->
             <div class="hidden md:flex items-center space-x-6 font-semibold text-slate-700">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
-                <a href="#tools" class="hover:text-blue-600 transition">R-Shiny Tools</a>
+                <a href="#tools" class="hover:text-blue-600 transition">R-Shiny Apps</a>
                 <a href="#publications" class="hover:text-blue-600 transition">Publications</a>
                 <a href="#reviewed-journals" class="hover:text-blue-600 transition">Reviewed Journals</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </div>
 
+            <!-- Social Links -->
             <div class="flex space-x-4 items-center">
                 <a href="https://github.com/drvenkybsms" target="_blank" class="text-slate-700 hover:text-blue-700 transition"><i class="fab fa-github text-2xl"></i></a>
                 <a href="https://www.linkedin.com/in/venkystats/" target="_blank" class="text-blue-700 hover:text-blue-900 transition"><i class="fab fa-linkedin text-2xl"></i></a>
@@ -64,52 +66,79 @@
         </div>
     </header>
 
+    <!-- Stats Section -->
+    <section class="py-12 bg-white border-b">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div data-aos="fade-up">
+                <h3 class="text-4xl font-bold text-blue-700">60+</h3>
+                <p class="text-slate-500 uppercase text-xs tracking-widest font-bold">Total Publications</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-4xl font-bold text-blue-700">3300+</h3>
+                <p class="text-slate-500 uppercase text-xs tracking-widest font-bold">Citations</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-4xl font-bold text-blue-700">21</h3>
+                <p class="text-slate-500 uppercase text-xs tracking-widest font-bold">h-index</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-4xl font-bold text-blue-700">35</h3>
+                <p class="text-slate-500 uppercase text-xs tracking-widest font-bold">i10-index</p>
+            </div>
+        </div>
+    </section>
+
     <!-- R-Shiny Apps Section -->
     <section id="tools" class="py-24 bg-slate-50 scroll-mt-20">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4" data-aos="fade-up">Interactive Research Tools</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto" data-aos="fade-up">Specialized R-Shiny applications for clinical diagnosis and advanced statistical methodology.</p>
+                <p class="text-slate-600 max-w-2xl mx-auto" data-aos="fade-up">Clinical decision support applications developed using R-Shiny to assist in diabetes classification and diagnosis.</p>
             </div>
-
-            <!-- Clinical Tools Grid -->
-            <div class="mb-16">
-                <h3 class="text-xl font-bold text-slate-700 mb-8 flex items-center gap-3">
-                    <i class="fas fa-user-md text-blue-600"></i> Clinical Decision Support Tools
-                </h3>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- MODY Calculator -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm card-hover border-t-4 border-blue-600" data-aos="fade-up">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="bg-blue-600 text-white w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"><i class="fas fa-calculator text-xl"></i></div>
-                            <h3 class="text-xl font-bold text-slate-800">MODY Calculator</h3>
-                        </div>
-                        <p class="text-slate-600 mb-6 text-sm leading-relaxed">A prediction model designed to distinguish <strong>Maturity-Onset Diabetes of the Young (MODY)</strong> from Type 1 and Type 2 diabetes.</p>
-                        <a href="https://mdrf-t1d-calculator.shinyapps.io/MODY/" target="_blank" class="shiny-link">Open MODY App <i class="fas fa-external-link-alt text-xs"></i></a>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- MODY Calculator -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover border-t-4 border-blue-600" data-aos="fade-up">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-blue-600 text-white w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"><i class="fas fa-calculator text-xl"></i></div>
+                        <h3 class="text-xl font-bold text-slate-800">MODY Calculator</h3>
                     </div>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">
+                        A statistical prediction model designed to distinguish <strong>Maturity-Onset Diabetes of the Young (MODY)</strong> from Type 1 and Type 2 diabetes.
+                    </p>
+                    <a href="https://mdrf-t1d-calculator.shinyapps.io/MODY/" target="_blank" class="shiny-link">
+                        Open MODY App <i class="fas fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
 
-                    <!-- T1D Calculator -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm card-hover border-t-4 border-indigo-600" data-aos="fade-up" data-aos-delay="100">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="bg-indigo-600 text-white w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"><i class="fas fa-stethoscope text-xl"></i></div>
-                            <h3 class="text-xl font-bold text-slate-800">T1D Calculator</h3>
-                        </div>
-                        <p class="text-slate-600 mb-6 text-sm leading-relaxed">Designed to distinguish <strong>Type 1 Diabetes from Type 2 Diabetes</strong>, optimized for clinical accuracy in India.</p>
-                        <a href="https://mdrf-t1d-calculator.shinyapps.io/Calculator/" target="_blank" class="shiny-link">Open T1D App <i class="fas fa-external-link-alt text-xs"></i></a>
+                <!-- T1D Calculator -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover border-t-4 border-indigo-600" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-indigo-600 text-white w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"><i class="fas fa-stethoscope text-xl"></i></div>
+                        <h3 class="text-xl font-bold text-slate-800">T1D Calculator</h3>
                     </div>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">
+                        Designed to distinguish <strong>Type 1 Diabetes from Type 2 Diabetes</strong>, optimized for clinical accuracy in India.
+                    </p>
+                    <a href="https://mdrf-t1d-calculator.shinyapps.io/Calculator/" target="_blank" class="shiny-link">
+                        Open T1D App <i class="fas fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
 
-                    <!-- IDRS -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm card-hover border-t-4 border-emerald-600" data-aos="fade-up" data-aos-delay="200">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="bg-emerald-600 text-white w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"><i class="fas fa-chart-line text-xl"></i></div>
-                            <h3 class="text-xl font-bold text-slate-800">IDRS Tool</h3>
-                        </div>
-                        <p class="text-slate-600 mb-6 text-sm leading-relaxed">The <strong>Indian Diabetes Risk Score</strong> helps identify individuals at high risk of developing type 2 diabetes.</p>
-                        <a href="https://mdrf-t1d-calculator.shinyapps.io/IDRS/" target="_blank" class="shiny-link">Open IDRS App <i class="fas fa-external-link-alt text-xs"></i></a>
+                <!-- IDRS -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover border-t-4 border-emerald-600" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-emerald-600 text-white w-12 h-12 rounded-lg flex items-center justify-center shadow-lg"><i class="fas fa-chart-line text-xl"></i></div>
+                        <h3 class="text-xl font-bold text-slate-800">IDRS Tool</h3>
                     </div>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">
+                        The <strong>Indian Diabetes Risk Score</strong> helps identify individuals at high risk of developing type 2 diabetes.
+                    </p>
+                    <a href="https://mdrf-t1d-calculator.shinyapps.io/IDRS/" target="_blank" class="shiny-link">
+                        Open IDRS App <i class="fas fa-external-link-alt text-xs"></i>
+                    </a>
                 </div>
             </div>
-
+        </div>
             <!-- Transition Arrow -->
             <div class="flex justify-center mb-16" data-aos="zoom-in">
                 <div class="flex flex-col items-center">
